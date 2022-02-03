@@ -1,0 +1,16 @@
+{
+	"fields": 
+	{
+		"project": 
+		{
+			"key": "RA"
+		},
+
+		"summary": "Vishveshwar has created this story using Matschie framework",
+		"description": "Vishveshwar - created this story using Matschie framework (Rest API)",
+		"issuetype": 
+		{
+			"name": "Story"
+		}
+	}
+}
