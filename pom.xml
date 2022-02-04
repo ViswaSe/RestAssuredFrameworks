@@ -1,20 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>MatschieFramework</groupId>
-  <artifactId>MatschieFramework</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>MatschieFramework</name>
-  <description>Rest Assured API framework</description>
-  	<properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>MatschieFramework</groupId>
+	<artifactId>MatschieFramework</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>MatschieFramework</name>
+	<description>Rest Assured API framework</description>
+	<properties>
 		<aspectj.version>1.9.5</aspectj.version>
 	</properties>
 	<dependencies>
-	
-	<dependency>
-		<groupId>io.rest-assured</groupId>
-		<artifactId>rest-assured</artifactId>
-		<version>4.2.0</version>
-	</dependency>
+
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.2.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -60,12 +62,9 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.20</version>
 				<configuration>
-					<argLine>
-						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar" -Dcucumber.options="--plugin io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"
-					</argLine>
 					<suiteXmlFiles>
-            			<suiteXmlFile>testng.xml</suiteXmlFile>
-          			</suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 			<plugin>
